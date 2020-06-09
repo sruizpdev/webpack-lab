@@ -1,9 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const webpack = require('webpack');
+const path = require('path');
+
+const basePath = __dirname;
+
 module.exports = {
+  context: path.join(basePath, 'src'),
   entry: {
-    app: './students.js',
+    app: './index.js',
     appStyles: ['./mystyles.scss'],
   },
   output: {
