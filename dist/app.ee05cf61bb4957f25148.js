@@ -81,30 +81,32 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./index.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./mystyles.css":
-/*!**********************!*\
-  !*** ./mystyles.css ***!
-  \**********************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./averageService.js":
+/*!***************************!*\
+  !*** ./averageService.js ***!
+  \***************************/
+/*! exports provided: getAvg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./mystyles.css?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getAvg\", function() { return getAvg; });\nfunction getAvg(scores) {\n  return getTotalScore(scores) / scores.length;\n}\n\nfunction getTotalScore(scores) {\n  return scores.reduce(function (score, count) {\n    return score + count;\n  });\n}\n\n//# sourceURL=webpack:///./averageService.js?");
 
 /***/ }),
 
-/***/ 0:
-/*!****************************!*\
-  !*** multi ./mystyles.css ***!
-  \****************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ "./index.js":
+/*!******************!*\
+  !*** ./index.js ***!
+  \******************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./mystyles.css */\"./mystyles.css\");\n\n\n//# sourceURL=webpack:///multi_./mystyles.css?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './content/logo_1.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\nvar img = document.createElement('img');\nimg.src = !(function webpackMissingModule() { var e = new Error(\"Cannot find module './content/logo_1.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\ndocument.getElementById('imgContainer').appendChild(img);\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 
