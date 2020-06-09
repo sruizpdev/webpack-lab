@@ -4,7 +4,7 @@ const webpack = require('webpack');
 module.exports = {
   entry: {
     app: './students.js',
-    appStyles: ['./mystyles.css'],
+    appStyles: ['./mystyles.scss'],
   },
   output: {
     filename: '[name].[chunkhash].js',
@@ -17,8 +17,21 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.css$/,
+        test: /\.scss$/,
         exclude: /node_modules/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          'css-loader',
+          {
+            loader: 'sass-loader',
+            options: {
+              implementation: require('sass'),
+            },
+          },
+        ],
+      },
+      {
+        test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
     ],
