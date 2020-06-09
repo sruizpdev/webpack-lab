@@ -86,14 +86,26 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./averageService.js":
+/*!***************************!*\
+  !*** ./averageService.js ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("\n\n//# sourceURL=webpack:///./averageService.js?");
+
+/***/ }),
+
 /***/ "./students.js":
 /*!*********************!*\
   !*** ./students.js ***!
   \*********************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// Let's use some ES6 features\nvar averageScore = '90';\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\n\n//# sourceURL=webpack:///./students.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_averageService__WEBPACK_IMPORTED_MODULE_0__);\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\n\n//# sourceURL=webpack:///./students.js?");
 
 /***/ }),
 
