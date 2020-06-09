@@ -86,38 +86,25 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./averageService.js":
-/*!***************************!*\
-  !*** ./averageService.js ***!
-  \***************************/
-/*! exports provided: getAvg */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./mystyles.css":
+/*!**********************!*\
+  !*** ./mystyles.css ***!
+  \**********************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getAvg\", function() { return getAvg; });\nfunction getAvg(scores) {\n  return getTotalScore(scores) / scores.length;\n}\n\nfunction getTotalScore(scores) {\n  return scores.reduce(function (score, count) {\n    return score + count;\n  });\n}\n\n//# sourceURL=webpack:///./averageService.js?");
-
-/***/ }),
-
-/***/ "./students.js":
-/*!*********************!*\
-  !*** ./students.js ***!
-  \*********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\n\n//# sourceURL=webpack:///./students.js?");
+eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./mystyles.css?");
 
 /***/ }),
 
 /***/ 0:
-/*!***************************!*\
-  !*** multi ./students.js ***!
-  \***************************/
+/*!****************************!*\
+  !*** multi ./mystyles.css ***!
+  \****************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__(/*! ./students.js */\"./students.js\");\n\n\n//# sourceURL=webpack:///multi_./students.js?");
+eval("module.exports = __webpack_require__(/*! ./mystyles.css */\"./mystyles.css\");\n\n\n//# sourceURL=webpack:///multi_./mystyles.css?");
 
 /***/ })
 
