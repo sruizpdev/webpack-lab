@@ -86,6 +86,18 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../content/logo_1.png":
+/*!*****************************!*\
+  !*** ../content/logo_1.png ***!
+  \*****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony default export */ __webpack_exports__[\"default\"] = (__webpack_require__.p + \"7385f7241e2ae2e3fca4a5be476a6989.png\");\n\n//# sourceURL=webpack:///../content/logo_1.png?");
+
+/***/ }),
+
 /***/ "./averageService.js":
 /*!***************************!*\
   !*** ./averageService.js ***!
@@ -106,7 +118,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n!(function webpackMissingModule() { var e = new Error(\"Cannot find module './content/logo_1.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\n\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\nvar img = document.createElement('img');\nimg.src = !(function webpackMissingModule() { var e = new Error(\"Cannot find module './content/logo_1.png'\"); e.code = 'MODULE_NOT_FOUND'; throw e; }());\ndocument.getElementById('imgContainer').appendChild(img);\n\n//# sourceURL=webpack:///./index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n/* harmony import */ var _content_logo_1_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../content/logo_1.png */ \"../content/logo_1.png\");\n\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\nvar img = document.createElement('img');\nimg.src = _content_logo_1_png__WEBPACK_IMPORTED_MODULE_1__[\"default\"];\ndocument.getElementById('imgContainer').appendChild(img);\n\n//# sourceURL=webpack:///./index.js?");
 
 /***/ })
 

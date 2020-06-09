@@ -1,7 +1,8 @@
-$blue-color: teal;
+$blue-color: rgb(255, 0, 0);
 
-.red-background {
+.text-background {
   background-color: $blue-color;
+  font-size: 2rem;
 }
 img {
   display: block;

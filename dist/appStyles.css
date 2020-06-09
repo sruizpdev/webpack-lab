@@ -1,5 +1,6 @@
-.red-background {
-  background-color: teal;
+.text-background {
+  background-color: red;
+  font-size: 2rem;
 }
 
 img {
