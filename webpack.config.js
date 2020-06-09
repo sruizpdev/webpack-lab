@@ -8,16 +8,17 @@ const basePath = __dirname;
 module.exports = {
   context: path.join(basePath, 'src'),
   entry: {
-    app: './index.jsx',
+    app: './index.tsx',
     appStyles: ['./mystyles.scss'],
   },
+  stats: 'errors-only',
   output: {
     filename: '[name].[chunkhash].js',
   },
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
       },
