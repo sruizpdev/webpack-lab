@@ -90,10 +90,11 @@
 /*!***************************!*\
   !*** ./averageService.js ***!
   \***************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! exports provided: getAvg */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./averageService.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"getAvg\", function() { return getAvg; });\nfunction getAvg(scores) {\n  return getTotalScore(scores) / scores.length;\n}\n\nfunction getTotalScore(scores) {\n  return scores.reduce(function (score, count) {\n    return score + count;\n  });\n}\n\n//# sourceURL=webpack:///./averageService.js?");
 
 /***/ }),
 
@@ -105,7 +106,7 @@ eval("\n\n//# sourceURL=webpack:///./averageService.js?");
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_averageService__WEBPACK_IMPORTED_MODULE_0__);\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\n\n//# sourceURL=webpack:///./students.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _averageService__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./averageService */ \"./averageService.js\");\n\nvar scores = [90, 75, 60, 99, 94, 30];\nvar averageScore = Object(_averageService__WEBPACK_IMPORTED_MODULE_0__[\"getAvg\"])(scores);\nvar messageToDisplay = \"average score \".concat(averageScore);\ndocument.write(messageToDisplay);\n\n//# sourceURL=webpack:///./students.js?");
 
 /***/ }),
 
